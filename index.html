@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chess JS by Vladimir Kostikov</title>
+</head>
+<body>
+    <div class="github">
+        <a href="https://github.com/VladimirKostikov" class="github-icon"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+    </div>
+    <div class="infobar">
+        <div class="infobar-left" id="first_player"></div>
+        <div class="infobar-right" id="second_player"></div>
+    </div>
+    <div class="chess" id="main">
+    
+        <div class="chess-row">
+            <div class="chess-block" id="0" data-row="0" data-col="0" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="1" data-row="0" data-col="1" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="2" data-row="0" data-col="2" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="3" data-row="0" data-col="3" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="4" data-row="0" data-col="4" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="5" data-row="0" data-col="5" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="6" data-row="0" data-col="6" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="7" data-row="0" data-col="7" data-piece="0" data-team="0"></div>
+        </div>
+        <div class="chess-row">
+            <div class="chess-block" id="8" data-row="1" data-col="0" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="9" data-row="1" data-col="1" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="10" data-row="1" data-col="2" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="11" data-row="1" data-col="3" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="12" data-row="1" data-col="4" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="13" data-row="1" data-col="5" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="14" data-row="1" data-col="6" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="15" data-row="1" data-col="7" data-piece="0" data-team="0"></div>
+        </div>
+        <div class="chess-row">
+            <div class="chess-block" id="16" data-row="2" data-col="0" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="17" data-row="2" data-col="1" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="18" data-row="2" data-col="2" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="19" data-row="2" data-col="3" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="20" data-row="2" data-col="4" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="21" data-row="2" data-col="5" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="22" data-row="2" data-col="6" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="23" data-row="2" data-col="7" data-piece="0" data-team="0"></div>
+        </div>
+        <div class="chess-row">
+            <div class="chess-block" id="24" data-row="3" data-col="0" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="25" data-row="3" data-col="1" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="26" data-row="3" data-col="2" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="27" data-row="3" data-col="3" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="28" data-row="3" data-col="4" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="29" data-row="3" data-col="5" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="30" data-row="3" data-col="6" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="31" data-row="3" data-col="7" data-piece="0" data-team="0"></div>
+        </div>
+        <div class="chess-row">
+            <div class="chess-block" id="32" data-row="4" data-col="0" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="33" data-row="4" data-col="1" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="34" data-row="4" data-col="2" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="35" data-row="4" data-col="3" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="36" data-row="4" data-col="4" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="37" data-row="4" data-col="5" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="38" data-row="4" data-col="6" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="39" data-row="4" data-col="7" data-piece="0" data-team="0"></div>
+        </div>
+        <div class="chess-row">
+            <div class="chess-block" id="40" data-row="5" data-col="0" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="41" data-row="5" data-col="1" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="42" data-row="5" data-col="2" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="43" data-row="5" data-col="3" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="44" data-row="5" data-col="4" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="45" data-row="5" data-col="5" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="46" data-row="5" data-col="6" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="47" data-row="5" data-col="7" data-piece="0" data-team="0"></div>
+        </div>
+        <div class="chess-row">
+            <div class="chess-block" id="48" data-row="6" data-col="0" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="49" data-row="6" data-col="1" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="50" data-row="6" data-col="2" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="51" data-row="6" data-col="3" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="52" data-row="6" data-col="4" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="53" data-row="6" data-col="5" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="54" data-row="6" data-col="6" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="55" data-row="6" data-col="7" data-piece="0" data-team="0"></div>
+        </div>
+        <div class="chess-row">
+            <div class="chess-block" id="56" data-row="7" data-col="0" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="57" data-row="7" data-col="1" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="58" data-row="7" data-col="2" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="59" data-row="7" data-col="3" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="60" data-row="7" data-col="4" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="61" data-row="7" data-col="5" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="62" data-row="7" data-col="6" data-piece="0" data-team="0"></div>
+            <div class="chess-block" id="63" data-row="7" data-col="7" data-piece="0" data-team="0"></div>
+        </div>
+    </div>
+</body>
+<script src="js/chess.js"></script>
+<script src="js/figure.js"></script>
+<script src="js/figures/King.js"></script>
+<script src="js/figures/Queen.js"></script>
+<script src="js/figures/Bishop.js"></script>
+<script src="js/figures/Knight.js"></script>
+<script src="js/figures/Castle.js"></script>
+<script src="js/figures/Pawn.js"></script>
+<script src="js/main.js"></script>
+</html>

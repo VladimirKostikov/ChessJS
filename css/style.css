@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #c9e5fd, #cedaff);
+    background-size: 400% 400%;
+
+    -webkit-animation: BackgroundAnimation 4s ease infinite;
+    -moz-animation: BackgroundAnimation 4s ease infinite;
+    -o-animation: BackgroundAnimation 4s ease infinite;
+    animation:BackgroundAnimation 4s ease infinite;
+}
+
+@-webkit-keyframes BackgroundAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes BackgroundAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes BackgroundAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes BackgroundAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.github {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.github-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.github-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.infobar {
+    width: 650px;
+    height: 60px;
+    background: #FFF;
+    border-radius: 10px;
+    padding: 23px;
+    position: fixed;
+    margin: 0 auto;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.infobar-right {
+    margin-left: auto;
+    order: 2;
+}
+
+.chess {
+    width: 650px;
+    height: 690px;
+    padding: 20px;
+    border: 1px solid lightgray;
+    background: #FFF;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.chess-row {
+    width: 100%;
+    display: flex;
+}
+
+
+.chess-block {
+    width: 81px;
+    height: 81px;
+    background: #eddaaf;
+    border: 1px solid lightgray;
+}
+
+
+.chess-row:nth-child(2n-1) .chess-block:nth-child(2n) {
+    background: #735753;
+}
+
+.chess-row:nth-child(2n) .chess-block:nth-child(2n-1) {
+    background: #735753;
+}
+
+.chess-block:hover {
+    background: orange !important;
+    cursor: pointer;
+}
+
+[data-team="1"] {
+    color: #000;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.selected {
+    background: orange !important;
+}
+
+.way {
+    background: green !important;
+}
+
+.attack {
+    background: red !important;
+}
+
+[data-team="2"] {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 24px;
+    -webkit-text-stroke: 0.5px #000;
+}
